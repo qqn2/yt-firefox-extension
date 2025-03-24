@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Transcript Summarizer",
+  "version": "1.0",
+  "description": "Extracts the YouTube video ID and opens a transcript page.",
+  "permissions": ["tabs", "activeTab"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "summarize-transcript": {
+      "suggested_key": {
+        "default": "Alt+Shift+U"
+      },
+      "description": "Summarize current YouTube video"
+    }
+  },
+  "browser_action": {
+  "default_icon": "icon/icon.png"
+    }
+}
